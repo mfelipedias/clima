@@ -8,6 +8,23 @@ body {
   min-height: 100vh;
   background: linear-gradient(to bottom, #ffffff, #e6881edc, #8529ff, #000000);
   color: white;
+  transition: background 0.5s ease;
+}
+
+body.sunny {
+  background: linear-gradient(to bottom, #87ceeb, #ffd700, #ff8c00);
+}
+
+body.cloudy {
+  background: linear-gradient(to bottom, #d3d3d3, #a9a9a9, #696969);
+}
+
+body.rainy {
+  background: linear-gradient(to bottom, #4682b4, #2f4f4f, #000000);
+}
+
+body.snowy {
+  background: linear-gradient(to bottom, #ffffff, #e0ffff, #b0e0e6);
 }
 
 .weather-app {
@@ -46,6 +63,39 @@ button:hover {
 
 #weather-info {
   margin-top: 20px;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.detail {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail i {
+  color: #74b9ff;
+}
+
+#weather-info p {
+  background: rgba(255, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  color: #ffcccc;
+}
+
+.loading {
+  margin-top: 20px;
+  color: #74b9ff;
+  font-size: 18px;
 }
 
 .visually-hidden {
